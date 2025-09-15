@@ -5,66 +5,116 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>LostbyRequiem.com</title>
 
-  <!-- Favicon (make sure files are in the repo root) -->
-  <link rel="icon" type="image/x-icon" href="/favicon.ico">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <!-- Favicon files (make sure these exist in repo root) -->
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <!-- your other styles / fonts here -->
+</head>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Fancy cursive font -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
 
   <style>
-    :root{ --accent:#9c88ff; --overlay:rgba(6,6,8,0.56); --muted:#cfcfcf; }
-    html,body{height:100%;margin:0;font-family:'Dancing Script', cursive;background:
-      linear-gradient(var(--overlay), var(--overlay)),
-      url('https://i.imgur.com/mHUvKNn.jpeg') center/cover no-repeat fixed;color:#fff;
-      -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
+    body {
+      margin: 0;
+      font-family: 'Dancing Script', cursive; /* Fancy cursive font */
+      color: #f2f2f2;
+      line-height: 1.6;
+      background: url("https://i.imgur.com/mHUvKNn.jpeg") no-repeat center center fixed;
+      background-size: cover;
     }
-
-    /* header */
-    header{display:flex;align-items:center;justify-content:space-between;padding:16px 20px;
-      background:rgba(0,0,0,0.45);position:sticky;top:0;z-index:1000;backdrop-filter:blur(4px);
-      border-bottom:1px solid rgba(255,255,255,0.04);
+    header {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 20px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
     }
-    .brand{font-family:'Great Vibes',cursive;font-size:28px;color:#fff;text-decoration:none;}
-    nav{display:flex;gap:12px;align-items:center;}
-    nav a{color:#fff;text-decoration:none;padding:8px 10px;border-radius:8px;transition:all 160ms ease;}
-    nav a:hover{background:var(--accent);color:#000;}
-
-    /* hero */
-    main{max-width:1100px;margin:0 auto;padding:18px;}
-    .hero{min-height:62vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:40px 18px;}
-    .card{background:rgba(0,0,0,0.48);padding:34px 28px;border-radius:12px;width:min(980px,94%);box-shadow:0 8px 30px rgba(0,0,0,0.6);}
-    .hero h1{margin:0 0 8px 0;font-size:44px;font-family:'Great Vibes',cursive;}
-    .hero p{margin:0;color:var(--muted);font-size:18px;}
-
-    section{padding:46px 18px;max-width:1000px;margin:0 auto;}
-    h2{margin:0 0 8px 0;font-size:26px;font-family:'Great Vibes',cursive;color:#fff;}
-
-    /* music embeds */
-    .music-embed{display:flex;gap:20px;justify-content:center;flex-wrap:wrap;margin-top:18px;}
-    .music-embed iframe{width:360px;height:380px;border-radius:10px;border:0;box-shadow:0 8px 22px rgba(0,0,0,0.55);}
-
-    /* about */
-    .about p{background:rgba(0,0,0,0.45);padding:18px;border-radius:10px;line-height:1.7;font-size:18px;color:#e6e6e6;margin-bottom:14px;}
-
-    /* links */
-    .links{text-align:center;}
-    .btn{display:inline-block;margin:8px;padding:10px 18px;color:#fff;background:transparent;border:1px solid rgba(255,255,255,0.12);border-radius:8px;text-decoration:none;transition:all 140ms ease;font-size:15px;}
-    .btn:hover{background:var(--accent);color:#000;border-color:transparent;}
-
-    footer{padding:18px;text-align:center;color:#bdbdbd;font-size:14px;background:rgba(0,0,0,0.28);}
-
-    @media (max-width:820px){
-      .music-embed iframe{width:90vw;height:300px;}
-      .hero h1{font-size:36px;}
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 2px;
+    }
+    nav a {
+      color: #f2f2f2;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #9c88ff;
+    }
+    section {
+      padding: 60px 20px;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.6);
+      margin: 20px;
+      border-radius: 12px;
+    }
+    .hero {
+      color: white;
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .hero h2 {
+      font-size: 3rem;
+      margin: 0;
+    }
+    .music-embed {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 30px;
+    }
+    .music-embed iframe {
+      width: 320px;
+      height: 380px;
+      border-radius: 12px;
+      border: none;
+    }
+    .about p {
+      max-width: 700px;
+      margin: 0 auto;
+      font-size: 1.1rem;
+      color: #ccc;
+    }
+    .links a {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 20px;
+      border: 1px solid #f2f2f2;
+      border-radius: 8px;
+      text-decoration: none;
+      color: #f2f2f2;
+      transition: 0.3s;
+    }
+    .links a:hover {
+      background: #9c88ff;
+      color: #0d0d0d;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(0,0,0,0.7);
+      font-size: 0.9rem;
+      color: #777;
     }
   </style>
+  <!-- Fancy cursive font -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
 </head>
-
 <body>
   <header>
-    <a class="brand" href="#home">LostbyRequiem.com</a>
+    <h1>LostbyRequiem</h1>
     <nav>
       <a href="#music">Music</a>
       <a href="#about">About</a>
@@ -72,64 +122,69 @@
     </nav>
   </header>
 
-  <main>
-    <section id="home" class="hero">
-      <div class="card">
-        <h1>Call Of The Night</h1>
-        <p>New single — 09/19/25</p>
-      </div>
-    </section>
+  <section class="hero">
+    <h2>Call Of The Night</h2>
+    <p>New Single Soon</p>
+    <p>09/19/25</p>
+  </section>
 
-    <section id="music">
-      <h2>Music</h2>
-      <div class="music-embed">
-        <!-- Spotify embed: use the EXACT embed iframe from Spotify -->
-        <iframe style="border-radius:12px"
-          src="https://open.spotify.com/embed/track/0TvM3bjvA6imvxuiy5HYDa?utm_source=generator"
-          width="360" height="380" frameborder="0"
-          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-          loading="lazy"></iframe>
+  <section id="music">
+  <h2>Music</h2>
+  <div class="music-embed">
+    <iframe style="border-radius:12px" src="<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0TvM3bjvA6imvxuiy5HYDa?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>" width="320" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+    <iframe width="320" height="180" src="https://www.youtube.com/embed/O_vpmO6qSWs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="320" height="180" src="https://www.youtube.com/embed/OQ3_L51wyLA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</section>
 
-        <!-- YouTube embeds -->
-        <iframe width="360" height="215" src="https://www.youtube.com/embed/O_vpmO6qSWs"
-          title="YouTube video player" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen></iframe>
+    <h2>Music</h2>
+    <div class="music-embed">
+      <!-- Fixed Spotify embed -->
+      <iframe style="border-radius:12px" 
+        src="https://open.spotify.com/embed/track/0TvM3bjvA6imvxuiy5HYDa?utm_source=generator" 
+        width="320" height="380" frameBorder="0" 
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+        loading="lazy"></iframe>
 
-        <iframe width="360" height="215" src="https://www.youtube.com/embed/OQ3_L51wyLA"
-          title="YouTube video player" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen></iframe>
-      </div>
-    </section>
+      <iframe width="320" height="180" src="https://www.youtube.com/embed/O_vpmO6qSWs" 
+        title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
 
-    <section id="about" class="about">
-      <h2>About</h2>
-      <p>
-        LostbyRequiem is an emerging lo-fi shoegaze and ambient indie rock artist from Edmonds, WA, crafting deeply introspective music built on memory, atmosphere, and emotional honesty.
-      </p>
-      <p>
-        With a focus on storytelling through mood and subtle detail, LostbyRequiem explores themes of grief, longing, and transformation. Each track is intentionally imperfect, layered with ambient noise, tape hiss, and delicate vocal delivery.
-      </p>
-      <p>
-        More than just songs, LostbyRequiem’s music feels like pages from a journal: quiet, raw, and deeply human. It invites listeners into a space of reflection, where silence and sound coexist.
-      </p>
-    </section>
+      <iframe width="320" height="180" src="https://www.youtube.com/embed/OQ3_L51wyLA" 
+        title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+    </div>
+  </section>
 
-    <section id="links" class="links">
-      <h2>Follow & Listen</h2>
-      <a class="btn" href="https://open.spotify.com/artist/713SNpxpkOSTVpiWL5qWp4" target="_blank" rel="noopener noreferrer">Spotify</a>
-      <a class="btn" href="https://music.apple.com/us/artist/lostbyrequiem/1769518793" target="_blank" rel="noopener noreferrer">Apple Music</a>
-      <a class="btn" href="https://www.youtube.com/@lostbyrequiem" target="_blank" rel="noopener noreferrer">YouTube</a>
-      <a class="btn" href="https://www.instagram.com/lostbyrequiem/" target="_blank" rel="noopener noreferrer">Instagram</a>
-      <a class="btn" href="https://tidal.com/browse/artist/50582557/u" target="_blank" rel="noopener noreferrer">Tidal</a>
-      <a class="btn" href="https://link.deezer.com/s/311fISnJz2SGmWDQitoYF" target="_blank" rel="noopener noreferrer">Deezer</a>
-      <a class="btn" href="https://music.amazon.com/artists/B0DHKLX2GS/lostbyrequiem" target="_blank" rel="noopener noreferrer">Amazon Music</a>
-    </section>
-  </main>
+  <section id="about" class="about">
+    <h2>About</h2>
+    <p>
+      LostbyRequiem is an emerging lo-fi shoegaze and ambient indie rock artist from Edmonds, WA, crafting deeply introspective music built on memory, atmosphere, and emotional honesty. Their work blends acoustic textures, analog warmth, field recordings, and minimal instrumentation to create immersive, meditative soundscapes.
+    </p>
+    <p>
+      With a focus on storytelling through mood and subtle detail, LostbyRequiem explores themes of grief, longing, and transformation. Each track is intentionally imperfect, layered with ambient noise, tape hiss, and delicate vocal delivery, to preserve the intimacy and vulnerability of the songwriting process.
+    </p>
+    <p>
+      More than just songs, lostbyrequiem’s music feels like pages from a journal: quiet, raw, and deeply human. It invites listeners into a space of reflection, where silence and sound coexist, and emotional depth is found in restraint.
+    </p>
+  </section>
+
+  <section id="links" class="links">
+    <h2>Follow & Listen</h2>
+    <a href="https://open.spotify.com/artist/713SNpxpkOSTVpiWL5qWp4?si=JPMxRcyvSwODvaUrd90L_A" target="_blank">Spotify</a>
+    <a href="https://music.apple.com/us/artist/lostbyrequiem/1769518793" target="_blank">Apple Music</a>
+    <a href="https://www.youtube.com/@lostbyrequiem" target="_blank">YouTube</a>
+    <a href="https://www.instagram.com/lostbyrequiem/" target="_blank">Instagram</a>
+    <a href="https://tidal.com/browse/artist/50582557/u" target="_blank">Tidal</a>
+    <a href="https://link.deezer.com/s/311fISnJz2SGmWDQitoYF" target="_blank">Deezer</a>
+    <a href="https://music.amazon.com/artists/B0DHKLX2GS/lostbyrequiem?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_pOsffTl6vCbaRnjEhZiQUXrga" target="_blank">Amazon Music</a>
+    <a href="https://music.amazon.com/artists/B0DHKLX2GS/lostbyrequiem" target="_blank">Amazon Music</a>
+  </section>
 
   <footer>
-    &copy; 2025 LostbyRequiem. All rights reserved.
+    <p>&copy; 2025 LostbyRequiem. All rights reserved.</p>
   </footer>
 </body>
 </html>
